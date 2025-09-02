@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">DiabeLife - Tu Comunidad de Diabetes</title>
+    <meta name="description" data-i18n="meta.description" content="Plataforma integral para el manejo de diabetes. Conecta con médicos, otros pacientes y gestiona tu salud de manera inteligente.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <img src="images/Logo.png" alt="DiabeLife" class="nav__logo">
+                <span class="nav__title">DiabeLife</span>
+            </div>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#inicio" class="nav__link" data-i18n="nav.home">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#caracteristicas" class="nav__link" data-i18n="nav.features">Características</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#faq" class="nav__link" data-i18n="nav.community">FAQ</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#suscripciones" class="nav__link" data-i18n="nav.pricing">Precios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacto" class="nav__link" data-i18n="nav.contact">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="nav__actions">
+                <div class="language-switcher">
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="flag-icon">🇪🇸</span>
+                        <span class="lang-text">ES</span>
+                    </button>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title" data-i18n="hero.title">
+                    Gestiona tu <span class="text-gradient">diabetes</span> con inteligencia
+                </h1>
+                <p class="hero__description" data-i18n="hero.description">
+                    Una plataforma integral que conecta pacientes con diabetes, médicos especialistas y una comunidad de apoyo. Monitorea, aprende y vive mejor con DiabeLife.
+                </p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary btn--large" data-i18n="hero.cta.primary">
+                        <i class="fas fa-rocket"></i>
+                        Comenzar Ahora
+                    </button>
+                    <button class="btn btn--secondary btn--large" data-i18n="hero.cta.secondary">
+                        <i class="fas fa-play"></i>
+                        Ver Demo
+                    </button>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <h3 class="stat__number">50K+</h3>
+                        <p class="stat__label" data-i18n="hero.stats.users">Usuarios Activos</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat__number">1,200+</h3>
+                        <p class="stat__label" data-i18n="hero.stats.doctors">Médicos Certificados</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat__number">98%</h3>
+                        <p class="stat__label" data-i18n="hero.stats.satisfaction">Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__illustration">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>120 mg/dL</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-calendar-check"></i>
+                        <span data-i18n="hero.floating.appointment">Cita: Dr. García</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-users"></i>
+                        <span data-i18n="hero.floating.community">Comunidad: 5 nuevos posts</span>
+                    </div>
+                    <div class="hero__main-graphic">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="caracteristicas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="features.title">Características Principales</h2>
+                <p class="section-description" data-i18n="features.description">
+                    Herramientas diseñadas específicamente para el manejo integral de la diabetes
+                </p>
+            </div>
+
+            <div class="features__grid">
+                <!-- Community Posts Feature -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.community.title">Comunidad Activa</h3>
+                    <p class="feature-card__description" data-i18n="features.community.description">
+                        Conéctate con otros pacientes y médicos. Comparte experiencias, consejos y apoyo mutuo en nuestra comunidad global.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.community.feature1">Posts de médicos especializados</li>
+                        <li data-i18n="features.community.feature2">Experiencias de pacientes reales</li>
+                        <li data-i18n="features.community.feature3">Grupos temáticos por tipo de diabetes</li>
+                        <li data-i18n="features.community.feature4">Moderación médica profesional</li>
+                    </ul>
+                </div>
+
+                <!-- Medical Reports Feature -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.reports.title">Reportes Médicos</h3>
+                    <p class="feature-card__description" data-i18n="features.reports.description">
+                        Los médicos pueden crear reportes detallados sobre el progreso de sus pacientes y compartir información vital.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.reports.feature1">Historial clínico digital</li>
+                        <li data-i18n="features.reports.feature2">Seguimiento de glucosa</li>
+                        <li data-i18n="features.reports.feature3">Análisis de tendencias</li>
+                        <li data-i18n="features.reports.feature4">Reportes exportables</li>
+                    </ul>
+                </div>
+
+                <!-- Appointments Feature -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.appointments.title">Gestión de Citas</h3>
+                    <p class="feature-card__description" data-i18n="features.appointments.description">
+                        Sistema inteligente de citas que facilita la comunicación entre médicos y pacientes.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.appointments.feature1">Agenda automática de médicos</li>
+                        <li data-i18n="features.appointments.feature2">Recordatorios inteligentes</li>
+                        <li data-i18n="features.appointments.feature3">Teleconsultas disponibles</li>
+                        <li data-i18n="features.appointments.feature4">Historial de citas completo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="faq.title">Preguntas Frecuentes</h2>
+                <p class="section-description" data-i18n="faq.description">
+                    Encuentra respuestas a las preguntas más comunes sobre DiabeLife
+                </p>
+            </div>
+
+            <div class="faq__content">
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q1.question">¿Cómo puede DiabeLife ayudarme a controlar mi diabetes?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q1.answer">DiabeLife ofrece herramientas integrales para monitoreo continuo de glucosa, recordatorios de medicamentos, acceso a especialistas médicos y una comunidad de apoyo. Nuestros algoritmos inteligentes analizan tus patrones de glucosa para brindarte recomendaciones personalizadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q2.question">¿Es segura la información médica que comparto en la plataforma?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q2.answer">Absolutamente. DiabeLife cumple con todas las regulaciones HIPAA y utiliza encriptación de nivel bancario para proteger tu información médica. Tus datos se almacenan en servidores seguros y nunca se comparten sin tu consentimiento explícito.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q3.question">¿Puedo usar DiabeLife junto con mi médico actual?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q3.answer">¡Por supuesto! DiabeLife está diseñado para complementar, no reemplazar, la atención médica tradicional. Puedes compartir fácilmente tus reportes y datos con tu médico actual, y muchos profesionales ya forman parte de nuestra red.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q4.question">¿Qué dispositivos de monitoreo son compatibles con DiabeLife?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q4.answer">DiabeLife es compatible con los principales dispositivos de monitoreo continuo de glucosa (CGM) como Dexcom, FreeStyle Libre, y medidores tradicionales. También se integra con aplicaciones de salud populares y dispositivos wearables.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q5.question">¿Puedo cancelar mi suscripción en cualquier momento?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q5.answer">Sí, puedes cancelar tu suscripción en cualquier momento desde tu panel de usuario. No hay contratos a largo plazo ni penalizaciones por cancelación. Tu acceso continuará hasta el final del período de facturación actual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+        <!-- Pricing Section -->
+    <section class="pricing" id="suscripciones">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="pricing.title">Planes de Suscripción</h2>
+                <p class="section-description" data-i18n="pricing.description">
+                    Elige el plan que mejor se adapte a tus necesidades de manejo de diabetes
+                </p>
+            </div>
+
+            <div class="pricing__grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name" data-i18n="pricing.basic.name">Plan Básico</h3>
+                        <div class="pricing-card__price">
+                            <span class="price-amount" data-i18n="pricing.basic.price">$10</span>
+                            <span class="price-period" data-i18n="pricing.basic.period">/mes</span>
+                        </div>
+                        <p class="pricing-card__description" data-i18n="pricing.basic.description">
+                            Perfecto para comenzar tu viaje de control de diabetes
+                        </p>
+                    </div>
+                    
+                    <div class="pricing-card__features">
+                        <ul class="features-list">
+                            <li data-i18n="pricing.basic.features.feature1">Seguimiento básico de glucosa</li>
+                            <li data-i18n="pricing.basic.features.feature2">Comunidad de pacientes</li>
+                            <li data-i18n="pricing.basic.features.feature3">Recordatorios de medicamentos</li>
+                            <li data-i18n="pricing.basic.features.feature4">Soporte por email</li>
+                            <li data-i18n="pricing.basic.features.feature5">1 consulta médica virtual</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card__footer">
+                        <button class="btn btn--secondary btn--large pricing-btn" data-i18n="pricing.basic.cta">
+                            Comenzar Plan Básico
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card pricing-card--popular">
+                    <div class="pricing-card__badge" data-i18n="pricing.premium.popular">Más Popular</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name" data-i18n="pricing.premium.name">Plan Premium</h3>
+                        <div class="pricing-card__price">
+                            <span class="price-amount" data-i18n="pricing.premium.price">$30</span>
+                            <span class="price-period" data-i18n="pricing.premium.period">/mes</span>
+                        </div>
+                        <p class="pricing-card__description" data-i18n="pricing.premium.description">
+                            La opción más popular con herramientas avanzadas
+                        </p>
+                    </div>
+                    
+                    <div class="pricing-card__features">
+                        <ul class="features-list">
+                            <li data-i18n="pricing.premium.features.feature1">Todo lo del Plan Básico</li>
+                            <li data-i18n="pricing.premium.features.feature2">Análisis avanzado de tendencias</li>
+                            <li data-i18n="pricing.premium.features.feature3">Reportes médicos detallados</li>
+                            <li data-i18n="pricing.premium.features.feature4">3 consultas médicas virtuales</li>
+                            <li data-i18n="pricing.premium.features.feature5">Acceso a especialistas</li>
+                            <li data-i18n="pricing.premium.features.feature6">Planes de alimentación personalizados</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card__footer">
+                        <button class="btn btn--primary btn--large pricing-btn" data-i18n="pricing.premium.cta">
+                            Elegir Plan Premium
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__name" data-i18n="pricing.professional.name">Plan Profesional</h3>
+                        <div class="pricing-card__price">
+                            <span class="price-amount" data-i18n="pricing.professional.price">$100</span>
+                            <span class="price-period" data-i18n="pricing.professional.period">/mes</span>
+                        </div>
+                        <p class="pricing-card__description" data-i18n="pricing.professional.description">
+                            Para profesionales de la salud y uso clínico
+                        </p>
+                    </div>
+                    
+                    <div class="pricing-card__features">
+                        <ul class="features-list">
+                            <li data-i18n="pricing.professional.features.feature1">Todo lo del Plan Premium</li>
+                            <li data-i18n="pricing.professional.features.feature2">Panel de gestión de pacientes</li>
+                            <li data-i18n="pricing.professional.features.feature3">Consultas ilimitadas</li>
+                            <li data-i18n="pricing.professional.features.feature4">API para integración clínica</li>
+                            <li data-i18n="pricing.professional.features.feature5">Soporte prioritario 24/7</li>
+                            <li data-i18n="pricing.professional.features.feature6">Capacitación personalizada</li>
+                            <li data-i18n="pricing.professional.features.feature7">Reportes para seguros médicos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card__footer">
+                        <button class="btn btn--secondary btn--large pricing-btn" data-i18n="pricing.professional.cta">
+                            Contactar Ventas
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing__guarantee">
+                <p data-i18n="pricing.guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    Garantía de 30 días - Cancela cuando quieras
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title" data-i18n="cta.title">
+                    ¿Listo para transformar tu manejo de la diabetes?
+                </h2>
+                <p class="cta__description" data-i18n="cta.description">
+                    Únete a miles de pacientes y médicos que ya confían en DiabeLife para mejorar su calidad de vida.
+                </p>
+                <div class="cta__actions">
+                    <button class="btn btn--primary btn--large" data-i18n="cta.patient">
+                        <i class="fas fa-user"></i>
+                        Soy Paciente
+                    </button>
+                    <button class="btn btn--secondary btn--large" data-i18n="cta.doctor">
+                        <i class="fas fa-user-md"></i>
+                        Soy Médico
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="DiabeLife">
+                        <span>DiabeLife</span>
+                    </div>
+                    <p data-i18n="footer.description">
+                        Transformando el cuidado de la diabetes a través de la tecnología y la comunidad.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 data-i18n="footer.product">Producto</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.features">Características</a></li>
+                            <li><a href="#" data-i18n="footer.pricing">Precios</a></li>
+                            <li><a href="#" data-i18n="footer.security">Seguridad</a></li>
+                            <li><a href="#" data-i18n="footer.api">API</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 data-i18n="footer.support">Soporte</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.help">Centro de Ayuda</a></li>
+                            <li><a href="#" data-i18n="footer.contact_support">Contactar Soporte</a></li>
+                            <li><a href="#" data-i18n="footer.community_support">Comunidad</a></li>
+                            <li><a href="#" data-i18n="footer.tutorials">Tutoriales</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 data-i18n="footer.company">Empresa</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.about">Sobre Nosotros</a></li>
+                            <li><a href="#" data-i18n="footer.careers">Carreras</a></li>
+                            <li><a href="#" data-i18n="footer.press">Prensa</a></li>
+                            <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.privacy">Privacidad</a></li>
+                            <li><a href="#" data-i18n="footer.terms">Términos</a></li>
+                            <li><a href="#" data-i18n="footer.cookies">Cookies</a></li>
+                            <li><a href="#" data-i18n="footer.compliance">Cumplimiento</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 DiabeLife. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+                <p class="footer__disclaimer" data-i18n="footer.disclaimer">
+                    DiabeLife no reemplaza el consejo médico profesional. Siempre consulte con su médico.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
