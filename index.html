@@ -34,7 +34,7 @@
                 <img src="images/LogoStartup.png" alt="DevsPros" class="nav__logo">
                 <span class="nav__title">DevsPros</span>
             </div>
-            
+
             <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
                     <a href="#inicio" class="nav__link" data-i18n="nav.home">Inicio</a>
@@ -65,3 +65,252 @@
             </div>
         </nav>
     </header>
+
+    <!-- ========================================
+         HERO SECTION - Sección Principal/Banner
+         ========================================
+         - Primera impresión de la página
+         - Título principal con call-to-action
+         - Descripción del producto DevsPros
+         - Botones de acción (Comenzar/Ver Demo)
+         - Estadísticas importantes (usuarios, médicos, satisfacción)
+         - Ilustración animada con tarjetas flotantes
+    ======================================== -->
+    <section class="hero" id="inicio">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title" data-i18n="hero.title">
+                    Gestiona tu <span class="text-gradient">diabetes</span> con inteligencia
+                </h1>
+                <p class="hero__description" data-i18n="hero.description">
+                    Una plataforma integral que conecta pacientes con diabetes, médicos especialistas y una comunidad de apoyo. Monitorea, aprende y vive mejor con DevsPros.
+                </p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary btn--large" data-i18n="hero.cta.primary">
+                        <i class="fas fa-rocket"></i>
+                        Comenzar Ahora
+                    </button>
+                    <button class="btn btn--secondary btn--large" data-i18n="hero.cta.secondary">
+                        <i class="fas fa-play"></i>
+                        Ver Demo
+                    </button>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <h3 class="stat__number">50K+</h3>
+                        <p class="stat__label" data-i18n="hero.stats.users">Usuarios Activos</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat__number">1,200+</h3>
+                        <p class="stat__label" data-i18n="hero.stats.doctors">Médicos Certificados</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat__number">98%</h3>
+                        <p class="stat__label" data-i18n="hero.stats.satisfaction">Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__illustration">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>120 mg/dL</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-calendar-check"></i>
+                        <span data-i18n="hero.floating.appointment">Cita: Dr. García</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-users"></i>
+                        <span data-i18n="hero.floating.community">Comunidad: 5 nuevos posts</span>
+                    </div>
+                    <div class="hero__main-graphic">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FEATURES SECTION - Características Principales
+         ========================================
+         - Muestra las 5 funcionalidades principales de DevsPros
+         - 1. Comunidad Activa - Conexión entre pacientes y médicos
+         - 2. Reportes Médicos - Historial clínico digital
+         - 3. Gestión de Citas - Sistema inteligente de citas
+         - 4. Glucómetro Virtual - Monitoreo de glucosa (diseño especial)
+         - 5. Vida Saludable - Seguimiento de actividad física y alimentación
+         - Cada tarjeta incluye ícono, título, descripción y lista de características
+    ======================================== -->
+    <section class="features" id="caracteristicas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="features.title">Características Principales</h2>
+                <p class="section-description" data-i18n="features.description">
+                    Herramientas diseñadas específicamente para el manejo integral de la diabetes
+                </p>
+            </div>
+
+            <div class="features__grid">
+                <!-- Community Posts Feature -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.community.title">Comunidad Activa</h3>
+                    <p class="feature-card__description" data-i18n="features.community.description">
+                        Conéctate con otros pacientes y médicos. Comparte experiencias, consejos y apoyo mutuo en nuestra comunidad global.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.community.feature1">Posts de médicos especializados</li>
+                        <li data-i18n="features.community.feature2">Experiencias de pacientes reales</li>
+                        <li data-i18n="features.community.feature3">Grupos temáticos por tipo de diabetes</li>
+                        <li data-i18n="features.community.feature4">Moderación médica profesional</li>
+                    </ul>
+                </div>
+
+                <!-- Medical Reports Feature -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.reports.title">Reportes Médicos</h3>
+                    <p class="feature-card__description" data-i18n="features.reports.description">
+                        Los médicos pueden crear reportes detallados sobre el progreso de sus pacientes y compartir información vital.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.reports.feature1">Historial clínico digital</li>
+                        <li data-i18n="features.reports.feature2">Seguimiento de glucosa</li>
+                        <li data-i18n="features.reports.feature3">Análisis de tendencias</li>
+                        <li data-i18n="features.reports.feature4">Reportes exportables</li>
+                    </ul>
+                </div>
+
+                <!-- Appointments Feature -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.appointments.title">Gestión de Citas</h3>
+                    <p class="feature-card__description" data-i18n="features.appointments.description">
+                        Sistema inteligente de citas que facilita la comunicación entre médicos y pacientes.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.appointments.feature1">Agenda automática de médicos</li>
+                        <li data-i18n="features.appointments.feature2">Recordatorios inteligentes</li>
+                        <li data-i18n="features.appointments.feature3">Teleconsultas disponibles</li>
+                        <li data-i18n="features.appointments.feature4">Historial de citas completo</li>
+                    </ul>
+                </div>
+
+                <!-- Virtual Glucometer Feature (Diseño Especial) -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.glucometer.title">Glucómetro Virtual</h3>
+                    <p class="feature-card__description" data-i18n="features.glucometer.description">
+                        Monitorea tus niveles de glucosa en tiempo real con nuestro innovador glucómetro virtual integrado a la plataforma.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.glucometer.feature1">Sincronización automática con dispositivos</li>
+                        <li data-i18n="features.glucometer.feature2">Alertas de niveles críticos</li>
+                        <li data-i18n="features.glucometer.feature3">Gráficos de tendencias en tiempo real</li>
+                        <li data-i18n="features.glucometer.feature4">Registro automático de mediciones</li>
+                    </ul>
+                </div>
+
+                <!-- Healthy Lifestyle Feature (Nueva característica) -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="feature-card__title" data-i18n="features.lifestyle.title">Vida Saludable</h3>
+                    <p class="feature-card__description" data-i18n="features.lifestyle.description">
+                        Administra el registro y seguimiento de tu actividad física y alimentación diaria, con recomendaciones personalizadas para un estilo de vida saludable.
+                    </p>
+                    <ul class="feature-card__list">
+                        <li data-i18n="features.lifestyle.feature1">Seguimiento de pasos y ejercicios</li>
+                        <li data-i18n="features.lifestyle.feature2">Registro de alimentación diaria</li>
+                        <li data-i18n="features.lifestyle.feature3">Análisis de calorías y nutrientes</li>
+                        <li data-i18n="features.lifestyle.feature4">Recomendaciones personalizadas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FAQ SECTION - Preguntas Frecuentes
+         ========================================
+         - Acordeón interactivo con preguntas y respuestas
+         - 5 preguntas principales sobre DevsPros
+         - Respuestas detalladas sobre funcionalidad, seguridad y uso
+         - Sistema de expansión/colapso con JavaScript
+         - Mejora la experiencia del usuario resolviendo dudas comunes
+    ======================================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="faq.title">Preguntas Frecuentes</h2>
+                <p class="section-description" data-i18n="faq.description">
+                    Encuentra respuestas a las preguntas más comunes sobre DevsPros
+                </p>
+            </div>
+
+            <div class="faq__content">
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q1.question">¿Cómo puede DevsPros ayudarme a controlar mi diabetes?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q1.answer">DevsPros ofrece herramientas integrales para monitoreo continuo de glucosa, recordatorios de medicamentos, acceso a especialistas médicos y una comunidad de apoyo. Nuestros algoritmos inteligentes analizan tus patrones de glucosa para brindarte recomendaciones personalizadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q2.question">¿Es segura la información médica que comparto en la plataforma?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q2.answer">Absolutamente. DevsPros cumple con todas las regulaciones HIPAA y utiliza encriptación de nivel bancario para proteger tu información médica. Tus datos se almacenan en servidores seguros y nunca se comparten sin tu consentimiento explícito.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q3.question">¿Puedo usar DevsPros junto con mi médico actual?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q3.answer">¡Por supuesto! DevsPros está diseñado para complementar, no reemplazar, la atención médica tradicional. Puedes compartir fácilmente tus reportes y datos con tu médico actual, y muchos profesionales ya forman parte de nuestra red.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q4.question">¿Qué dispositivos de monitoreo son compatibles con DevsPros?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q4.answer">DevsPros es compatible con los principales dispositivos de monitoreo continuo de glucosa (CGM) como Dexcom, FreeStyle Libre, y medidores tradicionales. También se integra con aplicaciones de salud populares y dispositivos wearables.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h3 data-i18n="faq.questions.q5.question">¿Puedo cancelar mi suscripción en cualquier momento?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q5.answer">Sí, puedes cancelar tu suscripción en cualquier momento desde tu panel de usuario. No hay contratos a largo plazo ni penalizaciones por cancelación. Tu acceso continuará hasta el final del período de facturación actual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
