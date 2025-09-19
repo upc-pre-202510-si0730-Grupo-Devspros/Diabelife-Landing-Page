@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" id="html-root">
+<head>
+    <!-- ========================================
+         METADATA - Información del documento
+         ========================================
+         - Configuración del charset y viewport
+         - Título y descripción meta para SEO
+         - Enlaces a hojas de estilo y fuentes
+         - Iconos de Font Awesome
+    ======================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">DevsPros - Tu Comunidad de Diabetes</title>
+    <meta name="description" data-i18n="meta.description" content="Plataforma integral para el manejo de diabetes. Conecta con médicos, otros pacientes y gestiona tu salud de manera inteligente.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========================================
+         HEADER - Navegación Principal
+         ========================================
+         - Barra de navegación fija en la parte superior
+         - Logo y nombre de la marca DevsPros
+         - Menú de navegación con enlaces a secciones
+         - Selector de idioma (español/inglés)
+         - Botón de menú móvil (hamburguesa)
+         - Se mantiene visible al hacer scroll
+    ======================================== -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <img src="images/LogoStartup.png" alt="DevsPros" class="nav__logo">
+                <span class="nav__title">DevsPros</span>
+            </div>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#inicio" class="nav__link" data-i18n="nav.home">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#caracteristicas" class="nav__link" data-i18n="nav.features">Características</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#faq" class="nav__link" data-i18n="nav.community">FAQ</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#suscripciones" class="nav__link" data-i18n="nav.pricing">Suscripciones</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacto" class="nav__link" data-i18n="nav.contact">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="nav__actions">
+                <div class="language-switcher">
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="flag-icon">🇪🇸</span>
+                    </button>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
