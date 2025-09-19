@@ -206,10 +206,10 @@ class I18n {
                     description: "Conoce a los desarrolladores apasionados que están creando DiabeLife",
                     members: {
                         member1: {
-                            name: "Integrante 1"
+                            name: "Iker Barturen"
                         },
                         member2: {
-                            name: "Integrante 2"
+                            name: "Gabriel Mamani"
                         },
                         member3: {
                             name: "Stephano Espinoza"
@@ -218,7 +218,7 @@ class I18n {
                             name: "Diego Véliz"
                         },
                         member5: {
-                            name: "Integrante 5"
+                            name: "Andres Torres"
                         }
                     }
                 },
@@ -427,19 +427,19 @@ class I18n {
                     description: "Meet the passionate developers creating DiabeLife",
                     members: {
                         member1: {
-                            name: "Member 1"
+                            name: "Iker Barturen"
                         },
                         member2: {
-                            name: "Member 2"
+                            name: "Gabriel Mamani"
                         },
                         member3: {
                             name: "Stephano Espinoza"
                         },
                         member4: {
-                            name: "Member 4"
+                            name: "Diego Véliz"
                         },
                         member5: {
-                            name: "Member 5"
+                            name: "Andres Torres"
                         }
                     }
                 },
