@@ -23,7 +23,7 @@
     --success-color: #10b981;
     --warning-color: #f59e0b;
     --error-color: #ef4444;
-    
+
     /* Grays */
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
@@ -35,17 +35,17 @@
     --gray-700: #374151;
     --gray-800: #1f2937;
     --gray-900: #111827;
-    
+
     /* Text */
     --text-primary: var(--gray-900);
     --text-secondary: var(--gray-600);
     --text-light: var(--gray-400);
-    
+
     /* Background */
     --bg-primary: #ffffff;
     --bg-secondary: var(--gray-50);
     --bg-dark: var(--gray-900);
-    
+
     /* Spacing */
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
@@ -54,25 +54,25 @@
     --space-xl: 2rem;
     --space-2xl: 3rem;
     --space-3xl: 4rem;
-    
+
     /* Border Radius */
     --radius-sm: 0.375rem;
     --radius-md: 0.5rem;
     --radius-lg: 0.75rem;
     --radius-xl: 1rem;
     --radius-2xl: 1.5rem;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    
+
     /* Transitions */
     --transition-fast: 150ms ease-in-out;
     --transition-normal: 250ms ease-in-out;
     --transition-slow: 350ms ease-in-out;
-    
+
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-weight-light: 300;
@@ -80,7 +80,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    
+
     /* Container */
     --container-max-width: 1200px;
     --container-padding: var(--space-md);
@@ -290,7 +290,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: all var(--transition-normal);
-    box-shadow: 
+    box-shadow:
         0 4px 12px rgba(0, 0, 0, 0.08),
         inset 0 1px 2px rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
@@ -320,7 +320,7 @@ body {
 
 .lang-toggle:hover {
     border-color: var(--primary-color);
-    box-shadow: 
+    box-shadow:
         0 8px 20px rgba(37, 99, 235, 0.25),
         0 2px 8px rgba(37, 99, 235, 0.15),
         inset 0 1px 2px rgba(255, 255, 255, 0.9);
@@ -329,7 +329,7 @@ body {
 
 .lang-toggle:active {
     transform: translateY(0) scale(1.02);
-    box-shadow: 
+    box-shadow:
         0 4px 12px rgba(37, 99, 235, 0.2),
         inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -371,12 +371,377 @@ body {
         height: 40px;
         padding: 8px;
     }
-    
+
     .flag-icon {
         font-size: 1.2em;
     }
-    
+
     .lang-toggle:hover {
         transform: translateY(-1px) scale(1.03);
     }
+}
+
+/* ========================================
+   HERO SECTION - Sección Principal
+   ========================================
+   - Banner principal con título y descripción
+   - Botones de call-to-action principales
+   - Estadísticas importantes de la empresa
+   - Ilustración principal con tarjetas flotantes
+   - Animaciones y efectos visuales
+======================================== */
+.hero {
+    padding: 8rem 0 var(--space-3xl);
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>') repeat;
+    opacity: 0.3;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.1;
+    margin-bottom: var(--space-xl);
+    color: var(--text-primary);
+}
+
+.hero__description {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2xl);
+    line-height: 1.7;
+}
+
+.hero__actions {
+    display: flex;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-3xl);
+}
+
+.hero__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat__number {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+}
+
+.stat__label {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.hero__image {
+    position: relative;
+    animation: fadeInRight 1s ease-out 0.3s both;
+}
+
+.hero__illustration {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__main-graphic {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-2xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4rem;
+    box-shadow: var(--shadow-xl);
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-card {
+    position: absolute;
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    font-weight: var(--font-weight-medium);
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-card i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.card-1 {
+    top: 20%;
+    left: -10%;
+    animation-delay: 0s;
+}
+
+.card-2 {
+    top: 60%;
+    right: -10%;
+    animation-delay: 1s;
+}
+
+.card-3 {
+    bottom: 10%;
+    left: 10%;
+    animation-delay: 2s;
+}
+
+/* ========================================
+   FEATURES SECTION - Características
+   ========================================
+   - Grid de las 5 características principales
+   - Tarjetas de features con iconos y descripciones
+   - Efecto especial para el glucómetro virtual
+   - Listas de características con checkmarks
+   - Grid responsivo para diferentes pantallas
+======================================== */
+.features {
+    padding: var(--space-3xl) 0;
+    background-color: var(--bg-primary);
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-2xl);
+}
+
+.feature-card {
+    background: white;
+    padding: var(--space-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--gray-200);
+    position: relative;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Solo efecto especial para el glucómetro (cuarta tarjeta) */
+.feature-card:nth-child(4) {
+    background: linear-gradient(135deg, #f8fafc 0%, #fef2f2 100%);
+    border: 2px solid var(--error-color);
+}
+
+.feature-card:nth-child(4) .feature-card__icon {
+    background: linear-gradient(135deg, var(--error-color), var(--warning-color));
+}
+
+.feature-card:nth-child(4):hover {
+    box-shadow: 0 20px 40px rgba(239, 68, 68, 0.15);
+    transform: translateY(-10px);
+}
+
+.feature-card__icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.feature-card__title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+}
+
+.feature-card__description {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+    line-height: 1.7;
+}
+
+.feature-card__list {
+    list-style: none;
+}
+
+.feature-card__list li {
+    padding: var(--space-sm) 0;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: var(--space-xl);
+}
+
+.feature-card__list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Grid responsivo para 5 elementos */
+@media (min-width: 1024px) {
+    .features__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-card:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+
+    .feature-card:nth-child(5) {
+        grid-column: 3 / 4;
+    }
+}
+
+@media (max-width: 1023px) {
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .features__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   FAQ SECTION - Preguntas Frecuentes
+   ========================================
+   - Acordeón interactivo con preguntas y respuestas
+   - Sistema de expansión/colapso
+   - Estados activos e inactivos
+   - Transiciones suaves para better UX
+   - Iconos rotativos para indicar estado
+======================================== */
+.faq {
+    padding: var(--space-3xl) 0;
+    background-color: var(--bg-secondary);
+}
+
+.faq__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.faq-item {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-xl);
+    cursor: pointer;
+    background: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+    transition: background-color var(--transition-fast);
+}
+
+.faq-question:hover {
+    background-color: var(--gray-50);
+}
+
+.faq-question h3 {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.faq-question i {
+    font-size: 1rem;
+    color: var(--primary-color);
+    transition: transform var(--transition-normal);
+    flex-shrink: 0;
+    margin-left: var(--space-md);
+}
+
+.faq-answer {
+    padding: 0 var(--space-xl) var(--space-xl);
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal), padding var(--transition-normal);
+}
+
+.faq-answer p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: var(--space-md) var(--space-xl) var(--space-xl);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-item.active .faq-question {
+    background-color: var(--gray-50);
 }
