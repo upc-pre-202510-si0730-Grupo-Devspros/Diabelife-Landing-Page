@@ -379,4 +379,4 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-console.log('🚀 DiabeLife main.js loaded successfully!');
+console.log(' DiabeLife main.js loaded successfully!');
