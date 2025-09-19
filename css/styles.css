@@ -957,3 +957,81 @@ body {
     background-color: white;
     color: var(--primary-color);
 }
+
+/* ========================================
+   TEAM SECTION - Nuestro Equipo
+   ========================================
+   - Galería de miembros del equipo
+   - Fotos circulares con efectos hover
+   - Nombres de los desarrolladores
+   - Layout flexible y responsivo
+   - Efectos de escala y sombras
+======================================== */
+.team {
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.team__lineup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+    flex-wrap: wrap;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: var(--space-md);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 4px rgba(37, 99, 235, 0.1);
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.team-member:hover .team-member__photo {
+    box-shadow: 
+        0 12px 30px rgba(0, 0, 0, 0.15),
+        0 0 0 4px rgba(37, 99, 235, 0.3);
+    transform: scale(1.05);
+}
+
+.team-member__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all var(--transition-normal);
+}
+
+.team-member:hover .team-member__photo img {
+    transform: scale(1.1);
+}
+
+.team-member__name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    transition: color var(--transition-normal);
+}
+
+.team-member:hover .team-member__name {
+    color: var(--primary-color);
+}
