@@ -745,3 +745,215 @@ body {
 .faq-item.active .faq-question {
     background-color: var(--gray-50);
 }
+
+/* ========================================
+   PRICING SECTION - Planes de Suscripción
+   ========================================
+   - Grid de 3 tarjetas de precios
+   - Plan destacado (más popular) con efectos especiales
+   - Listas de características con checkmarks
+   - Botones de llamada a la acción
+   - Garantía de satisfacción
+======================================== */
+.pricing {
+    padding: var(--space-3xl) 0;
+    background-color: var(--bg-secondary);
+}
+
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.pricing-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    border: 2px solid transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.pricing-card--popular {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.pricing-card--popular:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.pricing-card__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-lg);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-semibold);
+    box-shadow: var(--shadow-md);
+}
+
+.pricing-card__header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.pricing-card__name {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+}
+
+.pricing-card__price {
+    margin-bottom: var(--space-lg);
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+}
+
+.price-period {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+.pricing-card__description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.pricing-card__features {
+    flex: 1;
+    margin-bottom: var(--space-xl);
+}
+
+.features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.features-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.features-list li::before {
+    content: '✓';
+    color: var(--success-color);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.125rem;
+    flex-shrink: 0;
+    width: 20px;
+}
+
+.pricing-card__footer {
+    margin-top: auto;
+}
+
+.pricing-btn {
+    width: 100%;
+    justify-content: center;
+    font-weight: var(--font-weight-semibold);
+}
+
+.pricing__guarantee {
+    text-align: center;
+    padding: var(--space-xl);
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-top: var(--space-xl);
+}
+
+.pricing__guarantee p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+}
+
+.pricing__guarantee i {
+    color: var(--success-color);
+    font-size: 1.25rem;
+}
+
+/* ========================================
+   CTA SECTION - Llamada a la Acción
+   ========================================
+   - Sección de conversión principal
+   - Fondo con gradiente llamativo
+   - Dos botones diferenciados (Paciente/Médico)
+   - Texto motivacional centrado
+   - Colores invertidos para contraste
+======================================== */
+.cta {
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+}
+
+.cta__title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-lg);
+}
+
+.cta__description {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-2xl);
+    opacity: 0.9;
+}
+
+.cta__actions {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+}
+
+.cta .btn--primary {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.cta .btn--primary:hover {
+    background-color: var(--gray-100);
+}
+
+.cta .btn--secondary {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.cta .btn--secondary:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
